@@ -47,13 +47,38 @@ class Dimension:
             return 'date'
 
 
-@dataclasses.is_dataclass
+@dataclasses.dataclass
 class Metric:
     name: str
     label: str
     description: str
+    type: str
+    primary_entity: str = None
+    secondary_entity: str = None
+
+    def lookerMetric(self):
+        metric = f"""
+                measure: {self.name}{{
+                    label: "{self.label}"
+                    description: "{self.description}"
+                    type: {self.convertType()}
+                    sql: ${{TABLE}}.{self.name};;
+                    view_label: "   Metrics"
+            """
+
+        if self.secondary_entity:
+            metric = metric + f'        group_label: "{self.secondary_entity}"'
+        metric = metric + "\n                 }"
+        return metric
+
+    def convertType(self):
+        if self.type == 'SIMPLE':
+            return 'sum'
 
 
-@dataclasses.is_dataclass
+        if self.type == 'RATIO':
+            return 'avg'
+
+@dataclasses.dataclass
 class Entity:
     name: str
