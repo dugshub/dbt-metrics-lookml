@@ -1,0 +1,1058 @@
+{
+  "data": {
+    "dimensions": [
+      {
+        "name": "event__category",
+        "label": "Category",
+        "qualifiedName": "event__category",
+        "queryableGranularities": [],
+        "description": "Category of the event.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__created",
+        "label": "Created",
+        "qualifiedName": "event__created",
+        "queryableGranularities": [
+          "DAY",
+          "WEEK",
+          "MONTH",
+          "QUARTER",
+          "YEAR"
+        ],
+        "description": "Creation date of the event.",
+        "type": "TIME"
+      },
+      {
+        "name": "event__deleted",
+        "label": "Deleted",
+        "qualifiedName": "event__deleted",
+        "queryableGranularities": [],
+        "description": "Indicates if the event is deleted.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__description",
+        "label": "Description",
+        "qualifiedName": "event__description",
+        "queryableGranularities": [],
+        "description": "Description of the event.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__can_have_events",
+        "label": "Can Have Events",
+        "qualifiedName": "event__destination__can_have_events",
+        "queryableGranularities": [],
+        "description": "Indicates if the destination can have events.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__city",
+        "label": "City",
+        "qualifiedName": "event__destination__city",
+        "queryableGranularities": [],
+        "description": "City where the destination is located.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__created",
+        "label": "Created",
+        "qualifiedName": "event__destination__created",
+        "queryableGranularities": [
+          "DAY",
+          "WEEK",
+          "MONTH",
+          "QUARTER",
+          "YEAR"
+        ],
+        "description": "Creation date of the destination.",
+        "type": "TIME"
+      },
+      {
+        "name": "event__destination__default_event_length",
+        "label": "Default Event Length",
+        "qualifiedName": "event__destination__default_event_length",
+        "queryableGranularities": [],
+        "description": "Default event length for the destination.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__deleted",
+        "label": "Deleted",
+        "qualifiedName": "event__destination__deleted",
+        "queryableGranularities": [],
+        "description": "Indicates if the destination is deleted.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__description",
+        "label": "Description",
+        "qualifiedName": "event__destination__description",
+        "queryableGranularities": [],
+        "description": "Description of the destination.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__desktop_zoom_level",
+        "label": "Desktop Zoom Level",
+        "qualifiedName": "event__destination__desktop_zoom_level",
+        "queryableGranularities": [],
+        "description": "Desktop zoom level for the destination.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__destination_id",
+        "label": "Destination ID",
+        "qualifiedName": "event__destination__destination_id",
+        "queryableGranularities": [],
+        "description": "Unique identifier for the destination.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__generic_destination",
+        "label": "Generic Destination",
+        "qualifiedName": "event__destination__generic_destination",
+        "queryableGranularities": [],
+        "description": "Indicates if the destination is generic.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__hide_event_modal",
+        "label": "Hide Event Modal",
+        "qualifiedName": "event__destination__hide_event_modal",
+        "queryableGranularities": [],
+        "description": "Indicates if the event modal is hidden for the destination.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__last_updated",
+        "label": "Last Updated",
+        "qualifiedName": "event__destination__last_updated",
+        "queryableGranularities": [
+          "DAY",
+          "WEEK",
+          "MONTH",
+          "QUARTER",
+          "YEAR"
+        ],
+        "description": "Last updated date of the destination.",
+        "type": "TIME"
+      },
+      {
+        "name": "event__destination__location_lat",
+        "label": "Location Latitude",
+        "qualifiedName": "event__destination__location_lat",
+        "queryableGranularities": [],
+        "description": "Latitude of the destination's location.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__location_lon",
+        "label": "Location Longitude",
+        "qualifiedName": "event__destination__location_lon",
+        "queryableGranularities": [],
+        "description": "Longitude of the destination's location.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__mobile_zoom_level",
+        "label": "Mobile Zoom Level",
+        "qualifiedName": "event__destination__mobile_zoom_level",
+        "queryableGranularities": [],
+        "description": "Mobile zoom level for the destination.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__monthly_enabled",
+        "label": "Monthly Enabled",
+        "qualifiedName": "event__destination__monthly_enabled",
+        "queryableGranularities": [],
+        "description": "Indicates if the destination is enabled monthly.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__override_ideal_zoom",
+        "label": "Override Ideal Zoom",
+        "qualifiedName": "event__destination__override_ideal_zoom",
+        "queryableGranularities": [],
+        "description": "Indicates if the ideal zoom level is overridden for the destination.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__parent_destination_id",
+        "label": "Parent Destination ID",
+        "qualifiedName": "event__destination__parent_destination_id",
+        "queryableGranularities": [],
+        "description": "Identifier for the parent destination.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__seatgeek_auto_create",
+        "label": "SeatGeek Auto Create",
+        "qualifiedName": "event__destination__seatgeek_auto_create",
+        "queryableGranularities": [],
+        "description": "Indicates if the destination is auto-created in SeatGeek.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__seatgeek_auto_update",
+        "label": "SeatGeek Auto Update",
+        "qualifiedName": "event__destination__seatgeek_auto_update",
+        "queryableGranularities": [],
+        "description": "Indicates if the destination is auto-updated in SeatGeek.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__seatgeek_destination_title",
+        "label": "SeatGeek Destination Title",
+        "qualifiedName": "event__destination__seatgeek_destination_title",
+        "queryableGranularities": [],
+        "description": "SeatGeek destination title for the destination.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__seatgeek_performer_id",
+        "label": "SeatGeek Performer ID",
+        "qualifiedName": "event__destination__seatgeek_performer_id",
+        "queryableGranularities": [],
+        "description": "SeatGeek performer identifier for the destination.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__show_only_transient",
+        "label": "Show Only Transient",
+        "qualifiedName": "event__destination__show_only_transient",
+        "queryableGranularities": [],
+        "description": "Indicates if only transient information is shown for the destination.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__spothero_city_id",
+        "label": "SpotHero City ID",
+        "qualifiedName": "event__destination__spothero_city_id",
+        "queryableGranularities": [],
+        "description": "SpotHero city identifier for the destination.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__state",
+        "label": "State",
+        "qualifiedName": "event__destination__state",
+        "queryableGranularities": [],
+        "description": "State where the destination is located.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__status",
+        "label": "Status",
+        "qualifiedName": "event__destination__status",
+        "queryableGranularities": [],
+        "description": "Status of the destination.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__street_address",
+        "label": "Street Address",
+        "qualifiedName": "event__destination__street_address",
+        "queryableGranularities": [],
+        "description": "Street address of the destination.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__title",
+        "label": "Title",
+        "qualifiedName": "event__destination__title",
+        "queryableGranularities": [],
+        "description": "Title of the destination.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__venue_content_enabled",
+        "label": "Venue Content Enabled",
+        "qualifiedName": "event__destination__venue_content_enabled",
+        "queryableGranularities": [],
+        "description": "Indicates if venue content is enabled for the destination.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination__zipcode",
+        "label": "Zipcode",
+        "qualifiedName": "event__destination__zipcode",
+        "queryableGranularities": [],
+        "description": "Zip code of the destination.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__destination_id",
+        "label": "Destination ID",
+        "qualifiedName": "event__destination_id",
+        "queryableGranularities": [],
+        "description": "Identifier for the associated destination.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__ends",
+        "label": "Ends",
+        "qualifiedName": "event__ends",
+        "queryableGranularities": [
+          "DAY",
+          "WEEK",
+          "MONTH",
+          "QUARTER",
+          "YEAR"
+        ],
+        "description": "End date of the event.",
+        "type": "TIME"
+      },
+      {
+        "name": "event__event_ends_offset",
+        "label": "Event Ends Offset",
+        "qualifiedName": "event__event_ends_offset",
+        "queryableGranularities": [],
+        "description": "Offset time when the event ends.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__event_id",
+        "label": "Event ID",
+        "qualifiedName": "event__event_id",
+        "queryableGranularities": [],
+        "description": "Unique identifier for the event.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__event_starts_offset",
+        "label": "Event Starts Offset",
+        "qualifiedName": "event__event_starts_offset",
+        "queryableGranularities": [],
+        "description": "Offset time when the event starts.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__is_deleted_parent_event",
+        "label": "Is Deleted Parent Event",
+        "qualifiedName": "event__is_deleted_parent_event",
+        "queryableGranularities": [],
+        "description": "Indicates if the parent event is deleted.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__is_high_profile",
+        "label": "Is High Profile",
+        "qualifiedName": "event__is_high_profile",
+        "queryableGranularities": [],
+        "description": "Indicates if the event is high profile.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__last_updated",
+        "label": "Last Updated",
+        "qualifiedName": "event__last_updated",
+        "queryableGranularities": [
+          "DAY",
+          "WEEK",
+          "MONTH",
+          "QUARTER",
+          "YEAR"
+        ],
+        "description": "Last updated date of the event.",
+        "type": "TIME"
+      },
+      {
+        "name": "event__parent_event_id",
+        "label": "Parent Event ID",
+        "qualifiedName": "event__parent_event_id",
+        "queryableGranularities": [],
+        "description": "Identifier for the parent event.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__popularity_score",
+        "label": "Popularity Score",
+        "qualifiedName": "event__popularity_score",
+        "queryableGranularities": [],
+        "description": "Popularity score of the event.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__seatgeek_destination",
+        "label": "SeatGeek Destination",
+        "qualifiedName": "event__seatgeek_destination",
+        "queryableGranularities": [],
+        "description": "SeatGeek destination for the event.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__seatgeek_id",
+        "label": "SeatGeek ID",
+        "qualifiedName": "event__seatgeek_id",
+        "queryableGranularities": [],
+        "description": "SeatGeek identifier for the event.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__seatgeek_update",
+        "label": "SeatGeek Update",
+        "qualifiedName": "event__seatgeek_update",
+        "queryableGranularities": [],
+        "description": "Indicates if the event is updated in SeatGeek.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__short_description",
+        "label": "Short Description",
+        "qualifiedName": "event__short_description",
+        "queryableGranularities": [],
+        "description": "Short description of the event.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "event__starts",
+        "label": "Starts",
+        "qualifiedName": "event__starts",
+        "queryableGranularities": [
+          "DAY",
+          "WEEK",
+          "MONTH",
+          "QUARTER",
+          "YEAR"
+        ],
+        "description": "Start date of the event.",
+        "type": "TIME"
+      },
+      {
+        "name": "event__title",
+        "label": "Title",
+        "qualifiedName": "event__title",
+        "queryableGranularities": [],
+        "description": "Title of the event.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "facility__account_owner",
+        "label": "Account Owner",
+        "qualifiedName": "facility__account_owner",
+        "queryableGranularities": [],
+        "description": "Account owner of the facility.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "facility__canonical_facility__address_id",
+        "label": "Address ID",
+        "qualifiedName": "facility__canonical_facility__address_id",
+        "queryableGranularities": [],
+        "description": "Address identifier for the canonical facility.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "facility__canonical_facility__canonical_facility_id",
+        "label": "Canonical Facility ID",
+        "qualifiedName": "facility__canonical_facility__canonical_facility_id",
+        "queryableGranularities": [],
+        "description": "Unique identifier for the canonical facility.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "facility__canonical_facility__canonical_facility_title",
+        "label": "Canonical Facility Title",
+        "qualifiedName": "facility__canonical_facility__canonical_facility_title",
+        "queryableGranularities": [],
+        "description": "Title of the canonical facility.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "facility__canonical_facility__external_id",
+        "label": "External ID",
+        "qualifiedName": "facility__canonical_facility__external_id",
+        "queryableGranularities": [],
+        "description": "External identifier for the canonical facility.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "facility__canonical_facility__facility_currency",
+        "label": "Facility Currency",
+        "qualifiedName": "facility__canonical_facility__facility_currency",
+        "queryableGranularities": [],
+        "description": "Currency used by the canonical facility.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "facility__canonical_facility__facility_timezone",
+        "label": "Facility Timezone",
+        "qualifiedName": "facility__canonical_facility__facility_timezone",
+        "queryableGranularities": [],
+        "description": "Timezone of the canonical facility.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "facility__canonical_facility__is_airport_facility",
+        "label": "Is Airport Facility",
+        "qualifiedName": "facility__canonical_facility__is_airport_facility",
+        "queryableGranularities": [],
+        "description": "Indicates if the facility is an airport.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "facility__canonical_facility__reporting_market",
+        "label": "Reporting Market",
+        "qualifiedName": "facility__canonical_facility__reporting_market",
+        "queryableGranularities": [],
+        "description": "Reporting market of the canonical facility.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "facility__canonical_facility__reporting_market_top_6_canada",
+        "label": "Reporting Market Top 6 Canada",
+        "qualifiedName": "facility__canonical_facility__reporting_market_top_6_canada",
+        "queryableGranularities": [],
+        "description": "Indicates if the facility is in the top 6 reporting markets in Canada.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "facility__canonical_facility__reporting_market_top_8",
+        "label": "Reporting Market Top 8",
+        "qualifiedName": "facility__canonical_facility__reporting_market_top_8",
+        "queryableGranularities": [],
+        "description": "Indicates if the facility is in the top",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "facility__default_facility_spaces",
+        "label": "Default Facility Spaces",
+        "qualifiedName": "facility__default_facility_spaces",
+        "queryableGranularities": [],
+        "description": "Default number of spaces at the facility.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "facility__external_id",
+        "label": "External ID",
+        "qualifiedName": "facility__external_id",
+        "queryableGranularities": [],
+        "description": "External identifier for the facility.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "facility__facility_created_at",
+        "label": "Facility Created At",
+        "qualifiedName": "facility__facility_created_at",
+        "queryableGranularities": [
+          "DAY",
+          "WEEK",
+          "MONTH",
+          "QUARTER",
+          "YEAR"
+        ],
+        "description": "Creation date of the facility.",
+        "type": "TIME"
+      },
+      {
+        "name": "facility__facility_title",
+        "label": "Facility Title",
+        "qualifiedName": "facility__facility_title",
+        "queryableGranularities": [],
+        "description": "Title of the facility.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "facility__facility_type",
+        "label": "Facility Type",
+        "qualifiedName": "facility__facility_type",
+        "queryableGranularities": [],
+        "description": "Type of the facility.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "facility__geography__country_name",
+        "label": "Country Name",
+        "qualifiedName": "facility__geography__country_name",
+        "queryableGranularities": [],
+        "description": "Name of the country.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "facility__geography__county_name",
+        "label": "County Name",
+        "qualifiedName": "facility__geography__county_name",
+        "queryableGranularities": [],
+        "description": "Name of the county.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "facility__geography__geography_id",
+        "label": "Geography ID",
+        "qualifiedName": "facility__geography__geography_id",
+        "queryableGranularities": [],
+        "description": "Unique identifier for the geography.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "facility__geography__locality_name",
+        "label": "Locality Name",
+        "qualifiedName": "facility__geography__locality_name",
+        "queryableGranularities": [],
+        "description": "Name of the locality.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "facility__geography__neighbourhood_name",
+        "label": "Neighbourhood Name",
+        "qualifiedName": "facility__geography__neighbourhood_name",
+        "queryableGranularities": [],
+        "description": "Name of the neighbourhood.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "facility__geography__region_name",
+        "label": "Region Name",
+        "qualifiedName": "facility__geography__region_name",
+        "queryableGranularities": [],
+        "description": "Name of the region.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "forex__date",
+        "label": null,
+        "qualifiedName": "forex__date",
+        "queryableGranularities": [
+          "DAY",
+          "WEEK",
+          "MONTH",
+          "QUARTER",
+          "YEAR"
+        ],
+        "description": null,
+        "type": "TIME"
+      },
+      {
+        "name": "forex__forex_id",
+        "label": null,
+        "qualifiedName": "forex__forex_id",
+        "queryableGranularities": [],
+        "description": null,
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "forex__fx_rate",
+        "label": null,
+        "qualifiedName": "forex__fx_rate",
+        "queryableGranularities": [],
+        "description": null,
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "metric_time",
+        "label": null,
+        "qualifiedName": "metric_time__day",
+        "queryableGranularities": [
+          "DAY",
+          "WEEK",
+          "MONTH",
+          "QUARTER",
+          "YEAR"
+        ],
+        "description": "Event time for metrics.",
+        "type": "TIME"
+      },
+      {
+        "name": "rental__event_id",
+        "label": "Event ID",
+        "qualifiedName": "rental__event_id",
+        "queryableGranularities": [],
+        "description": "Identifier for the event.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "rental__facility_configuration_id",
+        "label": "Facility Configuration ID",
+        "qualifiedName": "rental__facility_configuration_id",
+        "queryableGranularities": [],
+        "description": "Identifier for the facility configuration.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "rental__is_valid",
+        "label": "Is Valid Rental",
+        "qualifiedName": "rental__is_valid",
+        "queryableGranularities": [],
+        "description": "Indicates if the rental is valid.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "rental__partner_id",
+        "label": "Partner ID",
+        "qualifiedName": "rental__partner_id",
+        "queryableGranularities": [],
+        "description": "Identifier for the partner.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "rental__payment_type_title",
+        "label": "Payment Type Title",
+        "qualifiedName": "rental__payment_type_title",
+        "queryableGranularities": [],
+        "description": "Title of the payment type.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "rental__rental_created_at_cst",
+        "label": "Rental Created At - CST",
+        "qualifiedName": "rental__rental_created_at_cst",
+        "queryableGranularities": [
+          "DAY",
+          "WEEK",
+          "MONTH",
+          "QUARTER",
+          "YEAR"
+        ],
+        "description": "Creation date of the rental in CST.",
+        "type": "TIME"
+      },
+      {
+        "name": "rental__rental_created_at_local",
+        "label": "Rental Created At - Local",
+        "qualifiedName": "rental__rental_created_at_local",
+        "queryableGranularities": [
+          "DAY",
+          "WEEK",
+          "MONTH",
+          "QUARTER",
+          "YEAR"
+        ],
+        "description": "Creation date of the rental in local time.",
+        "type": "TIME"
+      },
+      {
+        "name": "rental__rental_ends_at_cst",
+        "label": "Rental Ends At - CST",
+        "qualifiedName": "rental__rental_ends_at_cst",
+        "queryableGranularities": [
+          "DAY",
+          "WEEK",
+          "MONTH",
+          "QUARTER",
+          "YEAR"
+        ],
+        "description": "End date of the rental in CST.",
+        "type": "TIME"
+      },
+      {
+        "name": "rental__rental_ends_at_cst_time",
+        "label": "Rental Ends At - CST Time",
+        "qualifiedName": "rental__rental_ends_at_cst_time",
+        "queryableGranularities": [],
+        "description": "End time of the rental in CST.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "rental__rental_ends_at_local",
+        "label": "Rental Ends At - Local",
+        "qualifiedName": "rental__rental_ends_at_local",
+        "queryableGranularities": [
+          "DAY",
+          "WEEK",
+          "MONTH",
+          "QUARTER",
+          "YEAR"
+        ],
+        "description": "End date of the rental in local time.",
+        "type": "TIME"
+      },
+      {
+        "name": "rental__rental_ends_at_local_time",
+        "label": "Rental Ends At - Local Time",
+        "qualifiedName": "rental__rental_ends_at_local_time",
+        "queryableGranularities": [],
+        "description": "End time of the rental in local time.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "rental__rental_id",
+        "label": "Rental ID",
+        "qualifiedName": "rental__rental_id",
+        "queryableGranularities": [],
+        "description": "Unique identifier for the rental.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "rental__rental_lead_time",
+        "label": "Rental Lead Time",
+        "qualifiedName": "rental__rental_lead_time",
+        "queryableGranularities": [],
+        "description": "Lead time for the rental in CST.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "rental__rental_lead_time_local",
+        "label": "Rental Lead Time - Local",
+        "qualifiedName": "rental__rental_lead_time_local",
+        "queryableGranularities": [],
+        "description": "Lead time for the rental in local time.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "rental__rental_length_hours",
+        "label": "Rental Length Hours",
+        "qualifiedName": "rental__rental_length_hours",
+        "queryableGranularities": [],
+        "description": "Length of the rental in hours.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "rental__rental_length_minutes",
+        "label": "Rental Length Minutes",
+        "qualifiedName": "rental__rental_length_minutes",
+        "queryableGranularities": [],
+        "description": "Length of the rental in minutes.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "rental__rental_payment_status",
+        "label": "Rental Payment Status",
+        "qualifiedName": "rental__rental_payment_status",
+        "queryableGranularities": [],
+        "description": "Payment status of the rental.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "rental__rental_payment_type_title",
+        "label": "Rental Payment Type Title",
+        "qualifiedName": "rental__rental_payment_type_title",
+        "queryableGranularities": [],
+        "description": "Payment type title for the rental.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "rental__rental_reservation_status",
+        "label": "Rental Reservation Status",
+        "qualifiedName": "rental__rental_reservation_status",
+        "queryableGranularities": [],
+        "description": "Reservation status of the rental.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "rental__rental_rule_type_title",
+        "label": "Rental Rule Type Title",
+        "qualifiedName": "rental__rental_rule_type_title",
+        "queryableGranularities": [],
+        "description": "Rule type title for the rental.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "rental__rental_segment",
+        "label": "Rental Segment",
+        "qualifiedName": "rental__rental_segment",
+        "queryableGranularities": [],
+        "description": "Segment of the rental.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "rental__rental_segment_rollup",
+        "label": "Rental Segment Rollup",
+        "qualifiedName": "rental__rental_segment_rollup",
+        "queryableGranularities": [],
+        "description": "Rollup segment of the rental.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "rental__rental_source_title",
+        "label": "Rental Source Title",
+        "qualifiedName": "rental__rental_source_title",
+        "queryableGranularities": [],
+        "description": "Source title of the rental.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "rental__rental_starts_at_cst",
+        "label": "Rental Starts At - CST",
+        "qualifiedName": "rental__rental_starts_at_cst",
+        "queryableGranularities": [
+          "DAY",
+          "WEEK",
+          "MONTH",
+          "QUARTER",
+          "YEAR"
+        ],
+        "description": "Start date of the rental in CST.",
+        "type": "TIME"
+      },
+      {
+        "name": "rental__rental_starts_at_cst_time",
+        "label": "Rental Starts At - CST Time",
+        "qualifiedName": "rental__rental_starts_at_cst_time",
+        "queryableGranularities": [],
+        "description": "Start time of the rental in CST.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "rental__rental_starts_at_local",
+        "label": "Rental Starts At - Local",
+        "qualifiedName": "rental__rental_starts_at_local",
+        "queryableGranularities": [
+          "DAY",
+          "WEEK",
+          "MONTH",
+          "QUARTER",
+          "YEAR"
+        ],
+        "description": "Start date of the rental in local time.",
+        "type": "TIME"
+      },
+      {
+        "name": "rental__rental_starts_at_local_time",
+        "label": "Rental Starts At - Local Time",
+        "qualifiedName": "rental__rental_starts_at_local_time",
+        "queryableGranularities": [],
+        "description": "Start time of the rental in local time.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "rental__renter_id",
+        "label": "Renter ID",
+        "qualifiedName": "rental__renter_id",
+        "queryableGranularities": [],
+        "description": "Identifier for the renter.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "renter__date_joined",
+        "label": "Date Joined",
+        "qualifiedName": "renter__date_joined",
+        "queryableGranularities": [
+          "DAY",
+          "WEEK",
+          "MONTH",
+          "QUARTER",
+          "YEAR"
+        ],
+        "description": "Date when the renter joined.",
+        "type": "TIME"
+      },
+      {
+        "name": "renter__days_since_first_rental",
+        "label": "Days Since First Rental",
+        "qualifiedName": "renter__days_since_first_rental",
+        "queryableGranularities": [],
+        "description": "Number of days since the renter's first rental.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "renter__days_since_last_rental",
+        "label": "Days Since Last Rental",
+        "qualifiedName": "renter__days_since_last_rental",
+        "queryableGranularities": [],
+        "description": "Number of days since the renter's last rental.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "renter__email",
+        "label": "Email",
+        "qualifiedName": "renter__email",
+        "queryableGranularities": [],
+        "description": "Email address of the renter.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "renter__first_name",
+        "label": "First Name",
+        "qualifiedName": "renter__first_name",
+        "queryableGranularities": [],
+        "description": "First name of the renter.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "renter__first_rental_date",
+        "label": "First Rental Date",
+        "qualifiedName": "renter__first_rental_date",
+        "queryableGranularities": [
+          "DAY",
+          "WEEK",
+          "MONTH",
+          "QUARTER",
+          "YEAR"
+        ],
+        "description": "Date of the renter's first rental.",
+        "type": "TIME"
+      },
+      {
+        "name": "renter__first_rental_id",
+        "label": "First Rental ID",
+        "qualifiedName": "renter__first_rental_id",
+        "queryableGranularities": [],
+        "description": "Identifier for the renter's first rental.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "renter__last_name",
+        "label": "Last Name",
+        "qualifiedName": "renter__last_name",
+        "queryableGranularities": [],
+        "description": "Last name of the renter.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "renter__last_rental_date",
+        "label": "Last Rental Date",
+        "qualifiedName": "renter__last_rental_date",
+        "queryableGranularities": [
+          "DAY",
+          "WEEK",
+          "MONTH",
+          "QUARTER",
+          "YEAR"
+        ],
+        "description": "Date of the renter's last rental.",
+        "type": "TIME"
+      },
+      {
+        "name": "renter__last_rental_id",
+        "label": "Last Rental ID",
+        "qualifiedName": "renter__last_rental_id",
+        "queryableGranularities": [],
+        "description": "Identifier for the renter's last rental.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "renter__lifetime_credit_used",
+        "label": "Lifetime Credit Used",
+        "qualifiedName": "renter__lifetime_credit_used",
+        "queryableGranularities": [],
+        "description": "Total credit used by the renter.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "renter__lifetime_rentals",
+        "label": "Lifetime Rentals",
+        "qualifiedName": "renter__lifetime_rentals",
+        "queryableGranularities": [],
+        "description": "Total number of rentals by the renter.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "renter__lifetime_value",
+        "label": "Lifetime Value",
+        "qualifiedName": "renter__lifetime_value",
+        "queryableGranularities": [],
+        "description": "Total value of rentals by the renter.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "renter__phone_number",
+        "label": "Phone Number",
+        "qualifiedName": "renter__phone_number",
+        "queryableGranularities": [],
+        "description": "Phone number of the renter.",
+        "type": "CATEGORICAL"
+      },
+      {
+        "name": "renter__renter_id",
+        "label": "Renter ID",
+        "qualifiedName": "renter__renter_id",
+        "queryableGranularities": [],
+        "description": "Unique identifier for the renter.",
+        "type": "CATEGORICAL"
+      }
+    ]
+  }
+}

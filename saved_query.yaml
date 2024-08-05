@@ -1,0 +1,131 @@
+    query_params:
+      metrics:
+        - gov_local
+        - remittable_fee_revenue_local
+        - rental_remit_local
+        - rentals_sold
+        - rentals_ending
+        - rentals_starting
+        - facilities_with_rentals_sold
+        - facilities_with_rentals_ending
+        - facilities_with_rentals_starting
+        - renters_with_rentals_purchased
+        - renters_with_rentals_ending
+        - renters_with_rentals_starting
+
+      group_by:
+
+        ## Entity/Join Keys ##
+        - Entity('rental')
+
+
+        # Date and Time
+        - TimeDimension('metric_time','day')
+
+        # Event Destination
+        - Dimension('destination__state')
+        - Dimension('destination__status')
+        - Dimension('destination__street_address')
+        - Dimension('destination__title')
+        - Dimension('destination__venue_content_enabled')
+        - Dimension('destination__zipcode')
+        - Dimension('event__destination_id')
+
+        # Event
+        - Dimension('event__created')
+        - Dimension('event__deleted')
+        - Dimension('event__description')
+        - Dimension('destination__can_have_events')
+        - Dimension('destination__city')
+        - Dimension('destination__created')
+        - Dimension('destination__default_event_length')
+        - Dimension('destination__deleted')
+        - Dimension('destination__description')
+        - Dimension('destination__desktop_zoom_level')
+        - Dimension('destination__destination_id')
+        - Dimension('destination__generic_destination')
+        - Dimension('destination__last_updated')
+        - Dimension('destination__parent_destination_id')
+        - Dimension('event__ends')
+        - Dimension('event__event_ends_offset')
+        - Dimension('event__event_id')
+        - Dimension('event__event_starts_offset')
+        - Dimension('event__is_deleted_parent_event')
+        - Dimension('event__is_high_profile')
+        - Dimension('event__last_updated')
+        - Dimension('event__parent_event_id')
+        - Dimension('event__popularity_score')
+        - Dimension('event__seatgeek_destination')
+        - Dimension('event__seatgeek_id')
+        - Dimension('event__seatgeek_update')
+        - Dimension('event__short_description')
+        - Dimension('event__starts')
+        - Dimension('event__title')
+
+        # Canonical Facility
+        - Dimension('canonical_facility__address_id')
+        - Dimension('canonical_facility__canonical_facility_id')
+        - Dimension('canonical_facility__canonical_facility_title')
+        - Dimension('canonical_facility__external_id')
+        - Dimension('canonical_facility__facility_currency')
+        - Dimension('canonical_facility__facility_timezone')
+        - Dimension('canonical_facility__is_airport_facility')
+        - Dimension('canonical_facility__reporting_market')
+        - Dimension('canonical_facility__reporting_market_top_6_canada')
+        - Dimension('canonical_facility__reporting_market_top_8')
+
+
+        # Facility
+        - Dimension('facility__account_owner')
+        - Dimension('facility__facility_created_at')
+        - Dimension('facility__facility_title')
+        - Dimension('facility__facility_type')
+        - Dimension('facility__default_facility_spaces')
+        - Dimension('facility__external_id')
+
+        # Geography
+        - Dimension('geography__country_name')
+        - Dimension('geography__county_name')
+        - Dimension('geography__geography_id')
+        - Dimension('geography__locality_name')
+        - Dimension('geography__neighbourhood_name')
+        - Dimension('geography__region_name')
+
+        # Rental
+        - Dimension('rental__event_id')
+        - Dimension('rental__facility_configuration_id')
+        - Dimension('rental__is_valid')
+        - Dimension('rental__partner_id')
+        - Dimension('rental__payment_type_title')
+        - Dimension('rental__rental_created_at_cst')
+        - Dimension('rental__rental_ends_at_local')
+        - Dimension('rental__rental_ends_at_local_time')
+        - Dimension('rental__rental_id')
+        - Dimension('rental__rental_length_hours')
+        - Dimension('rental__rental_lead_time_local')
+        - Dimension('rental__rental_length_minutes')
+        - Dimension('rental__rental_payment_status')
+        - Dimension('rental__rental_reservation_status')
+        - Dimension('rental__rental_rule_type_title')
+        - Dimension('rental__rental_segment')
+        - Dimension('rental__rental_segment_rollup')
+        - Dimension('rental__rental_source_title')
+        - Dimension('rental__rental_starts_at_local')
+        - Dimension('rental__rental_starts_at_local_time')
+        - Dimension('rental__renter_id')
+
+        # Renter
+        - Dimension('renter__date_joined')
+        - Dimension('renter__days_since_first_rental')
+        - Dimension('renter__days_since_last_rental')
+        - Dimension('renter__email')
+        - Dimension('renter__first_name')
+        - Dimension('renter__first_rental_date')
+        - Dimension('renter__first_rental_id')
+        - Dimension('renter__last_name')
+        - Dimension('renter__last_rental_date')
+        - Dimension('renter__last_rental_id')
+        - Dimension('renter__lifetime_rentals')
+        - Dimension('renter__lifetime_value')
+        - Dimension('renter__phone_number')
+        - Dimension('renter__renter_id')
