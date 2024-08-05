@@ -1,0 +1,13 @@
+,name,label,description,type,metric_category,group,primary_entity,secondary_entity
+0,gov_local,GOV Local,The sum of checkout price including all fees. This only accounts rentals with 'payment_status' = 'success' and 'reservation_status' = 'valid',SIMPLE,Operational Financial Metrics,Core,,
+1,remittable_fee_revenue_local,Remittable Fee Revenue Local,The sum of fees collected that are included in the Display Price. This only accounts rentals with 'payment_status' = 'success' and 'reservation_status' = 'valid'.  Note: This metric is included within the GMV metric. If this is selected alongside GMV  you will be double counting revenue.      ,SIMPLE,Operational Financial Metrics,Core,,
+2,rental_remit_local,Rental Remit Local,The total value remitted to the operator from valid rentals.,SIMPLE,Operational Financial Metrics,Core,,
+3,rentals_sold,Rentals Sold,Count of rentals created where payment status is 'success' and reservation status is 'valid'.,SIMPLE,Rental Counts,Core,,
+4,rentals_ending,Rentals Ending,Count of rentals ending where payment status is 'success' and reservation status is 'valid'.,SIMPLE,Rental Counts,Core,,
+5,rentals_starting,Rentals Starting,Count of rentals starting where payment status is 'success' and reservation status is 'valid'.,SIMPLE,Rental Counts,Core,,
+6,facilities_with_rentals_sold,Facilities With Rental Sold,Distinct count of facilities with a rental sold where payment status is 'success' and reservation status is 'valid'.,SIMPLE,Facility Counts,Core,,
+7,facilities_with_rentals_ending,Facilities With Rentals Ending,Distinct count of facilities with rentals ending where payment status is 'success' and reservation status is 'valid'.,SIMPLE,Facility Counts,Core,,
+8,facilities_with_rentals_starting,Facilities With Rentals Starting,Distinct count of facilities with rentals starting where payment status is 'success' and reservation status is 'valid'.,SIMPLE,Facility Counts,Core,,
+9,renters_with_rentals_purchased,Renters With A Purchase,Distinct count of renters with a purchase where payment status is 'success' and reservation status is 'valid'.,SIMPLE,Renter Counts,Core,,
+10,renters_with_rentals_ending,Renters With Rentals Ending,Distinct count of renters with rentals ending where payment status is 'success' and reservation status is 'valid'.,SIMPLE,Renter Counts,Core,,
+11,renters_with_rentals_starting,Renters With Rentals Starting,Distinct count of renters with rentals starting where payment status is 'success' and reservation status is 'valid'.,SIMPLE,Renter Counts,Core,,
