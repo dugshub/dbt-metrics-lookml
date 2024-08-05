@@ -1,0 +1,22 @@
+# swagger.yml
+
+openapi: 3.0.0
+info:
+  title: "RP Flask REST API"
+  description: "An API about people and notes"
+  version: "1.0.0"
+
+
+servers:
+  - url: "/api"
+
+paths:
+  /dimensions_tags:
+    get:
+      operationId: main.get_lookml
+      tags:
+        - 'Dimensions'
+      summary: "Get additional tags about each dimension. They are not yet avaialble in the smenatic layer."
+      responses:
+        "200":
+          description: "Successfully read properties"

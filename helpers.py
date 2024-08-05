@@ -41,6 +41,7 @@ def fields_to_csvs(dimensions=False,metrics=False):
         return f"Metrics updated: {metrics}, dimensions updated: {dimensions}"
 
 def create_lookml(metrics=None, dimensions=None, header=None):
+
     dimension_list = []
     for dimension in dimensions:
         dim = Dimension(
